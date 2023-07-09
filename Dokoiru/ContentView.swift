@@ -21,7 +21,7 @@ struct ContentView: View {
     var body: some View {
         // 地図を表示
         Map(coordinateRegion: $region)
-            .edgesIgnoringSafeArea(.bottom)
+            .ignoresSafeArea()
     }
 }
 
