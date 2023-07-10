@@ -44,6 +44,7 @@
 		40D955AD2A5AF73E00F53A4B /* DokoiruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DokoiruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D955B12A5AF73E00F53A4B /* DokoiruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokoiruUITests.swift; sourceTree = "<group>"; };
 		40D955B32A5AF73E00F53A4B /* DokoiruUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokoiruUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		40D955C02A5B1F5C00F53A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 		40D955952A5AF73B00F53A4B /* Dokoiru */ = {
 			isa = PBXGroup;
 			children = (
+				40D955C02A5B1F5C00F53A4B /* Info.plist */,
 				40D955962A5AF73B00F53A4B /* DokoiruApp.swift */,
 				40D955982A5AF73B00F53A4B /* ContentView.swift */,
 				40D9559A2A5AF73D00F53A4B /* Assets.xcassets */,
@@ -420,6 +422,8 @@
 				DEVELOPMENT_TEAM = B4NYL4Y26B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dokoiru/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = test;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +453,8 @@
 				DEVELOPMENT_TEAM = B4NYL4Y26B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dokoiru/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = test;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
