@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-class LocationDataManager: NSObject, ObservableObject, CLLocationManagerDelegate {
+class MyLocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     @Published var location = CLLocation()
     var locationManager = CLLocationManager()
@@ -28,7 +28,7 @@ class LocationDataManager: NSObject, ObservableObject, CLLocationManagerDelegate
 
 struct ContentView: View {
     
-    @ObservedObject var locationDataManager = LocationDataManager()
+    @ObservedObject var myLocationManager = MyLocationManager()
     
     @State var region = MKCoordinateRegion()
     @State var trackingMode = MapUserTrackingMode.follow
@@ -42,8 +42,8 @@ struct ContentView: View {
         .sheet(isPresented: $isPresented) {
             Form {
                 Section {
-                    LabeledContent("latitude", value: String(locationDataManager.location.coordinate.latitude))
-                    LabeledContent("longitude", value: String(locationDataManager.location.coordinate.longitude))
+                    LabeledContent("latitude", value: String(myLocationManager.location.coordinate.latitude))
+                    LabeledContent("longitude", value: String(myLocationManager.location.coordinate.longitude))
                 } header: {
                     Text("My Location")
                 }
